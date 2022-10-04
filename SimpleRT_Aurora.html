@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Metadata ************************************************************** -->
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Simple Reaction Time Test" />
+    <meta
+      name="copyright"
+      content="2020 The Many Brains Project, Inc. and McLean Hospital"
+    />
+    <meta name="author" content="Paolo Martini" />
+    <meta name="keywords" content="reaction time, cognitive test, brain test" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- End of metadata ******************************************************* -->
+
+    <!-- Title ***************************************************************** -->
+
+    <title>Fast Reactions Test</title>
+
+    <!-- End of Title ********************************************************** -->
+
+    <!-- css Style declarations ************************************************ -->
+
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+
+    <!-- end of css declarations *********************************************** -->
+
+    <!-- js libraries ********************************************************** -->
+
+    <script
+      type="text/javascript"
+      src="./js/TestMyBrain.01.26.16.min.js"
+    ></script>
+
+    <!-- end of js libraries *************************************************** -->
+
+    <!-- SimpleRT script ******************************************************* -->
+
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <!-- end of SimpleRT script ************************************************ -->
+  </head>
+
+  <body>
+    <!-- this DIV is used to show a message and continue the test sequence-->
+    <div id="alertBox" class="inst" style="display: none">
+      <span class="instSpan" id="alertText">This is a placeholder.</span>
+      <button type="button" class="button" id="alertButton">Click here</button>
+      <br />
+    </div>
+
+    <!-- this DIV shows the hold signal -->
+    <div
+      id="hold"
+      class="stim"
+      style="display: none; background-color: #ff0000"
+    >
+      <br />WAIT
+    </div>
+
+    <!-- this DIV shows the go signal -->
+    <div id="go" class="stim" style="display: none; background-color: #00ff00">
+      <br />GO!
+    </div>
+
+    <!-- if Javascript is disabled, we instruct the user to enable it------->
+    <noscript>
+      For full functionality of this site it is necessary to enable
+      JavaScript.<br />
+      Here are the
+      <a href="http://www.enable-javascript.com/" target="_blank">
+        instructions</a
+      >
+      how to enable JavaScript in your web browser.
+    </noscript>
+  </body>
+</html>
