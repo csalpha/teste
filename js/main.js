@@ -209,7 +209,8 @@ function setFrameSequence() {
   ];
 
   // push all components into the frames chain
-  for (var i = 0; i < 1; i++) {
+  // // for (var i = 0; i < 1; i++) {
+  for (var i = 0; i < frameType.length; i++) {
     frameSequence.push({
       type: frameType[i],
       message: frameMessage[i],
@@ -225,7 +226,8 @@ function setFrameSequence() {
     700, 900,
   ];
 
-  for (i = 0; i < 1; i++) {
+  // // for (i = 0; i < 1; i++) {
+  for (i = 0; i < 30; i++) {
     frameSequence.push({
       type: 'test',
       message: '',
